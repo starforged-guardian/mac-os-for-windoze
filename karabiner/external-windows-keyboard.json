@@ -1,0 +1,69 @@
+{
+  "title": "External Windows keyboard modifier swap",
+  "rules": [
+    {
+      "description": "Swap Alt and Windows keys into Mac-style Option and Command positions",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_option"
+          },
+          "to": [
+            {
+              "key_code": "left_command"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_command"
+          },
+          "to": [
+            {
+              "key_code": "left_option"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_option"
+          },
+          "to": [
+            {
+              "key_code": "right_command"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_command"
+          },
+          "to": [
+            {
+              "key_code": "right_option"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "print_screen"
+          },
+          "to": [
+            {
+              "key_code": "5",
+              "modifiers": [
+                "left_command",
+                "left_shift"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

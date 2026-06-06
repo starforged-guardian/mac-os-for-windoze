@@ -1,0 +1,23 @@
+# Developer profile: terminal, editor, source control, and Unix-friendly tools.
+
+cask "iterm2"
+cask "visual-studio-code"
+
+brew "git"
+brew "gh"
+brew "wget"
+brew "curl"
+brew "jq"
+brew "ripgrep"
+brew "fd"
+brew "fzf"
+brew "bat"
+brew "eza"
+brew "zoxide"
+brew "direnv"
+brew "git-delta"
+brew "btop"
+brew "tree"
+brew "coreutils"
+brew "gnu-sed"
+brew "mas"
