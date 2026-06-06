@@ -60,6 +60,7 @@ if command_exists brew; then
   printf '%-24s%s\n' "Homebrew path:" "$(command -v brew)"
 else
   printf 'missing\n'
+  # shellcheck disable=SC2016
   printf '  Install hint: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"\n'
 fi
 

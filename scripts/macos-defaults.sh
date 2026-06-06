@@ -57,10 +57,6 @@ apply_setting() {
   local domain key kind value description
   IFS='|' read -r domain key kind value description <<< "$1"
 
-  if [[ "$value" == '$HOME/Desktop' ]]; then
-    value="$HOME/Desktop"
-  fi
-
   if [[ "$APPLY" == "0" ]]; then
     printf '%-34s %s %s %s\n' "$description:" "$domain" "$key" "$value"
     print_command defaults write "$domain" "$key" "$kind" "$value"
